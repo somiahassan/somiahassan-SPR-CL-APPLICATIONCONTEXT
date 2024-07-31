@@ -24,18 +24,20 @@ public class Lab {
     public ElectricEngine getElectricPoweredBean(){
         return applicationContext.getBean(ElectricEngine.class);
     }
+
     /**
-     * TODO: Retrieve an GasEngine bean and return it.
+     * TODO: Retrieve a GasEngine bean and return it.
      * @return a GasEngine bean
      */
     public GasEngine getGasPoweredBean(){
-        return null;
+        return applicationContext.getBean(GasEngine.class);
     }
+
     /**
      * TODO: Retrieve a NuclearEngine bean and return it.
      * @return a NuclearEngine bean
      */
     public NuclearEngine getNuclearPoweredBean(){
-        return null;
+        return applicationContext.getBean(NuclearEngine.class);
     }
 }
